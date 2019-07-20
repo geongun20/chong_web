@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+#faq_wrap {margin:10px 0 30px}
+#faq_wrap h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+.faq_admin {text-align:right;width:100%}
+#faq_wrap ol {margin:0;padding:0;list-style:none}
+#faq_wrap li{border:1px solid #ddd;background:#fff;margin:5px 0;}
+#faq_wrap li h4{min-height:30px;line-height:20px;padding-top:12px;padding-left:40px;position:relative;font-size:1rem;}
+#faq_wrap li h4 .tit_bg{display:inline-block;position:absolute;top:12px;left:12px;text-align:center;background:#333;color:#fff;border-radius:50%;width:20px;height:20px;}
+#faq_con .con_inner{display:none;border-top:1px solid #ddd;padding:10px;padding-left:40px;position:relative;background: #f7f7f7;}
+#faq_con .con_inner .tit_bg{display:inline-block;position:absolute;top:12px;left:12px;text-align:center;background:#777;color:#fff;border-radius:50%;width:20px;line-height:20px;height:20px}
+#faq_con .con_inner .closer_btn{height:25px;font-size:0.92em;display:inline-block;padding:0 5px;border-radius:5px;}
+#faq_con .con_closer{text-align:right}
+#faq_con a{text-decoration: none;color:#5a5a5a !important}
+
+#faq_sch {text-align:center;padding:30px 0 0;}
+#faq_sch form {display:inline-block;position:relative}
+.plr-20 {margin: 0 20px 0 15px !important;}
+

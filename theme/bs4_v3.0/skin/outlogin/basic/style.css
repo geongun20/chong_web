@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* New Login Format */
+.form-signin-out input[type="email"], .form-signin-out input[type="password"], .form-signin-out input[type="text"], .form-signin-out button {
+    width: 100%;
+    display: block;
+    margin-bottom: 2px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.group-out {
+  position: relative;
+  z-index: 1;
+ }
+  .long {
+	margin-bottom: 30px;  
+  }
+   .short {
+	margin-bottom: 24px;  
+  } 
+  .group-out input,
+  .group-out textarea {
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #f1f1f1;
+   }
+    .group-out input:focus,
+    .group-out textarea:focus {
+      outline: none;
+      box-shadow: none;
+      }
+  .group-out label {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 5px;
+    transition: 0.5s ease all;
+    }
+  .group-out .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+    .group-out .bar:before, .group-out .bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background-color: #f056a5;
+      transition: 0.5s ease all;
+  }
+    .group-out .bar:before {
+      left: 50%; }
+    .group-out .bar:after {
+      right: 50%;
+  }
+  .group-out .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+ }
+  .group-out textarea {
+    min-height: 90px;
+ }
+/* Form Active State */
+.group-out input:focus ~ label,
+.group-out textarea:focus ~ label,
+.group-out input:valid ~ label,
+.group-out textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #f056a5;
+ }
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+  }
+
+
+/* 아웃로그인 스킨 */
+.ol {position:relative;}
+.ol h2 {margin:0;padding:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
+
+.ol a.btn_admin {display:inline-block;padding:0 10px;height:25px;text-decoration:none;line-height:25px;vertical-align:middle} /* 관리자 전용 버튼 */
+.ol a.btn_admin:focus, .ol a.btn_admin:hover {text-decoration:none}
+#ol_before:after {display:block;visibility:hidden;clear:both;content:""}
+#ol_id {border:1px solid #fff;border-bottom:1px solid #e9e9e9;}
+#ol_pw {border:1px solid #fff;border-bottom:1px solid #e9e9e9}
+#ol_after {background:#fff; font-size:0.85rem;}
+#ol_after_private {border-left:none !important;border-right:none !important;border-bottom:none !important;}
+#ol_after_hd {position:relative;margin:5px 0 25px;padding:10px;padding-left:80px;height:72px;}
+#ol_after_hd span{display:block;margin:5px 0}
+#ol_after_hd .profile_img{position:absolute;top:15px;left:15px;display:inline-block;}
+#ol_after_hd .profile_img img{border:1px solid #bbb;border-radius:50%;width:50px;height:50px}
+#ol_after_hd .profile_img  a{display:block;position:absolute;bottom:-5px;right:-5px;background: #fff;text-align:center;font-size:1rem;width:30px;line-height:30px;border-radius:50%;color:#777;
+-webkit-box-shadow: -2px -2px 5px rgba(0,0,0,0.1);
+-moz-box-shadow:  -2px -2px 5px rgba(0,0,0,0.1);
+box-shadow: -2px -2px 5px rgba(0,0,0,0.1);}
+#ol_after_hd .btn_admin {}
+#ol_after_hd .btn_b04{line-height:23px;padding:0 5px}
+#ol_after_hd .btn-sm{padding:.25rem .3rem;}
+#ol_after_private {background:#f7f7f7;border-top: 1px solid #e8e8e8;zoom:1; font-size: .8rem;}
+#ol_after_private:after {display:block;visibility:hidden;clear:both;content:""}
+#ol_after_private li {margin-bottom:1px;position:relative;float:left;width:33.333%;text-align:center;}
+#ol_after_private a {display:block;color:#444;line-height:20px;height:60px;border-left:1px solid #e8e8e8;padding:10px 0;}
+#ol_after_private li:first-child a{border-left:0}
+#ol_after_private a span {display:inline-block;max-width:87px;overflow:hidden;white-space:nowrap;text-overflow:clip;background:#7587a2;color:#fff;padding:0 8px;border-radius:15px;font-size:0.85rem;box-shadow:inset 2px 1px 3px rgba(0,0,0,0.2)}
+#ol_after_private a span.scrap{padding:0 14px;}
+#ol_after_private a:hover span{background:#4b8bff}
+#ol_after_private li a:hover{color:#4b8bff;background:#f1f1f1}
+#ol_after_memo {;margin-right:1px;}
+#ol_after_pt {margin-right:1px}

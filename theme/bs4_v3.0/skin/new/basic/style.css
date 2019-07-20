@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* 최근게시물 스킨 (new) */
+#new_sch {margin-top:10px;margin-bottom:20px;width:100%;text-align:center;padding: 20px 0 0;border: 1px solid rgba(0,0,0,.125);background: rgba(0,0,0,.03);}
+#new_sch p {padding:10px 0 0;font-size:0.95em;text-align:center;letter-spacing:-0.1em;margin-bottom:10px;}
+#fnew {text-align:center;}
+#fnewlist .profile_img img{border-radius:50%}
+#fnewlist .td_date{font-style:italic}
+
+.table a {color:inherit;}
+.table a:hover {color:inherit;text-decoration:none;font-weight:600}
+.table th {text-align:center;}
+.custom-select:click {background-color:#eee;}
+.table td {text-align:center}

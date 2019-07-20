@@ -1,0 +1,246 @@
+
+/* Specific styles of signin component */
+/*General styles */
+
+body, html{ 
+	height: 100%;
+}
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+/* Card component */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there's no content */
+    padding: 10px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 30px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.card-container i {
+	opacity: 0.4;
+	text-align: center;
+}
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Form styles */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+.form-signin #inputEmail-out,
+.form-signin #inputPassword-out {
+    direction: ltr;
+    height: 34px;
+    font-size: .85rem;
+}
+/*
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+}
+.btn.btn-signin {
+    /* background-color: #4d90fe; */
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+}
+.forgot-password {
+    color: rgb(90, 90, 90);
+}
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+}
+.title-login {
+	padding-top: 30px;
+	text-align: center;
+	color: rgb(90, 90, 90);
+}
+.info {
+	padding-top: 20px;
+	text-align: center;
+}
+#remember {
+	text-align: center;
+	padding: 10px 0;
+}
+#find_info {
+	margin: 0 auto;
+	width: 400px;
+}
+
+/* New Login Format */
+.form-signin input[type="email"], .form-signin input[type="password"], .form-signin input[type="text"], .form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 2px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.group {
+  position: relative;
+  z-index: 1;
+ }
+  .long {
+	margin-bottom: 30px;  
+  }
+   .short {
+	margin-bottom: 24px;  
+  } 
+  .group input,
+  .group textarea {
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #f1f1f1;
+   }
+    .group input:focus,
+    .group textarea:focus {
+      outline: none;
+      box-shadow: none;
+      }
+  .group label {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 5px;
+    transition: 0.5s ease all;
+    }
+  .group .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+    .group .bar:before, .group .bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background-color: #f056a5;
+      transition: 0.5s ease all;
+  }
+    .group .bar:before {
+      left: 50%; }
+    .group .bar:after {
+      right: 50%;
+  }
+  .group .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+ }
+  .group textarea {
+    min-height: 90px;
+ }
+/* Form Active State */
+.group input:focus ~ label,
+.group textarea:focus ~ label,
+.group input:valid ~ label,
+.group textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #f056a5;
+ }
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+  }

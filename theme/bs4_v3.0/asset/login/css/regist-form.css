@@ -1,0 +1,19 @@
+.regist-form {
+	padding: 120px 0 30px;
+}
+
+p {
+	padding-bottom: 20px;
+}
+
+.regist-title {
+	padding: 20px 0 10px;
+	font-size: 1em;
+	font-weight: 400;
+	color: #000;
+}
+
+.captcha {
+	text-align: center;
+	padding: 20px 0;
+}

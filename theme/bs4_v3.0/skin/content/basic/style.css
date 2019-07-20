@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#content {margin-bottom: 20px;}
+#ctt {padding: 10px 0 30px;}
+.ctt_admin {display: none;}
+.ctt_admin .btn_admin {font-size: 0.85em;padding: 0.2rem 0.5rem}
+
+/* ctt_page */
+header h1::before {content: '';position: absolute;display: block;width: 120px;height: 1px;background: #ddd;bottom: 1px;left: calc(50% - 60px);}
+header h1::after {content: '';position: absolute;display: block;width: 40px;height: 3px;background: #007bff;bottom: 0;left: calc(50% - 20px);}
+header h1 {font-size: 1.5rem;color: #111;text-transform: uppercase;text-align: center;font-weight: 700;position: relative;padding-bottom: 15px;}
+
+.heading {font-size: 1.2rem; font-weight: 600;}
+.leading {font-size: 0.9rem}
+
+.section-header {margin: 0 auto; width: 100%; padding-top: 1.6rem;}

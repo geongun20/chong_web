@@ -1,0 +1,58 @@
+/* Features */
+.features-icons {padding-top: 5rem; padding-bottom: 5rem;}
+.features-icons-icon {font-size: 3rem;}
+.feature h3 {font-size: 1.4rem;}
+.feature p {font-size: 1rem;}
+
+/* Article List */
+.intro h2 {font-size: 1.4rem;}
+.articles {text-align: center;}
+.articles h4 {font-size: 2rem; padding-top: 15px; color: #000; font-weight: 600;}
+.action {font-size: 0.9rem; color: #4f86c3;}
+.articles .item {margin-bottom: 20px; text-align: center;}
+
+/* showcase */
+.showcase .item {background-color: #fff; margin-right: 0; margin-left: 0;}
+.showcase .showcase-img {min-height: 30rem; background-size: cover;}
+.showcase-text {padding: 10rem 8rem;}
+.showcase h2 {font-size: 1.2rem;padding-bottom: 1.6rem;}
+.showcase p {font-size: .9rem;}
+
+/* Testimonial */
+.testimonial-item img {max-width: 12rem; box-shadow: 0 5px 5px 0 #adb5bd;}
+.testimonials h2 {font-size: 1.4rem;}
+.testimonial-item h5 {font-size: 1.1rem; font-weight: 600;}
+.testimonial-pad {padding: 3rem;}
+
+/* call-to-action */
+.call-to-action {position: relative; background-color: #343a40; background-size: cover; padding-top: 7rem; padding-bottom: 7rem;}
+.call-to-action .overlay { position: absolute; background-color: #212529; height: 100%; width: 100%; top: 0; left: 0; opacity: .3;}
+.call-to-action h2 {font-size: 1.4rem;}
+
+/* Responsive for showcase */
+@media (max-width: 978px) {
+	.showcase-text {padding: 3rem;}	
+	.showcase .text-end {padding-bottom: 0;}
+}
+
+/* Masthead */
+header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 650px}
+header.masthead .intro-text {padding-top: 150px; padding-bottom: 100px;}
+header.masthead .intro-text .intro-lead-in {font-size: 24px; font-style: italic; line-height: 24px; margin-bottom: 25px;}
+header.masthead .intro-text .intro-heading {font-size: 32px; font-weight: 700; line-height: 32px; margin-bottom: 50px;}
+header.masthead .intro-text { padding-top: 300px; padding-bottom: 200px;}
+
+/* Responsive forMasthead */
+@media (max-width: 920px) {
+	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 500px;}
+	header.masthead .intro-text {padding-top: 210px; padding-bottom: 40px;}
+	header.masthead .intro-text .intro-lead-in {font-size: 20px; font-style: italic; line-height: 20px; margin-bottom: 18px;}
+	header.masthead .intro-text .intro-heading {font-size: 24px; font-weight: 700; line-height: 24px; margin-bottom: 40px;}
+}
+
+@media (max-width: 640px) {
+	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 400px;}
+	header.masthead .intro-text {padding-top: 180px; padding-bottom: 40px;}
+	header.masthead .intro-text .intro-lead-in {font-size: 14px; font-style: italic; line-height: 14px; margin-bottom: 16px;}
+	header.masthead .intro-text .intro-heading {font-size: 16px; font-weight: 700; line-height: 16px; margin-bottom: 36px;}
+}
