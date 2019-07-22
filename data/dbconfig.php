@@ -4,7 +4,7 @@ define('G5_MYSQL_HOST', 'localhost');
 define('G5_MYSQL_USER', 'leesg9');
 define('G5_MYSQL_PASSWORD', 'leesg9@7975');
 define('G5_MYSQL_DB', 'leesg9');
-define('G5_MYSQL_SET_MODE', true);
+define('G5_MYSQL_SET_MODE', false);
 
 define('G5_TABLE_PREFIX', 'g5_');
 

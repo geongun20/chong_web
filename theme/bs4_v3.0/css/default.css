@@ -45,7 +45,9 @@ body {margin:0;padding:0;font-size:.85rem !important;font-family: "Apple SD Goth
 .hd_pops_footer .hd_pops_close{background:#393939;position:absolute;top:0;right:0}
 
 /* Main */
-.container {max-width: 1200px !important;}
+.container {max-width: 900px !important;}
+/* 코딩 뭐갓이 해놨네 */
+nav .container {max-width: 1200px !important;}
 
 /* CIRCLE IMAGE CONTENT
 -------------------------------------------------- */
@@ -545,3 +547,12 @@ box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.2);}
 #ans_datetime {margin-top:10px;}
 
 .p_lb {padding:0 10px 10px 0}
+/* 이하 추가 */
+p.m-0.text-center.text-white {
+word-break: keep-all;
+}
+
+html {
+height: 100%;
+background-color: #000;
+}
