@@ -120,9 +120,9 @@ function prohibit_mb_email($reg_mb_email)
     $email_domain = strtolower($domain);
 
     if (in_array($email_domain, $email_domains))
-        return "$domain 메일은 사용할 수 없습니다.";
-
-    return "";
+        return "";
+    else
+    return "SNU 메일만 사용 가능합니다.";
 }
 
 function exist_mb_email($reg_mb_email, $reg_mb_id)
