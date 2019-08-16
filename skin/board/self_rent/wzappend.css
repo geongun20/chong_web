@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+a.fc-event:link, a.fc-event:visited {color:#fff;}
+a.fc-event:hover {color: #fff;text-decoration: underline;}
+.fc-view, .fc-view > table {background-color: #fff;}
+.fc-view .fc-day-header {padding:10px 0}
+
+.wz_tbl_1,.wz_tbl_1 th,.wz_tbl_1 td{border:0;}
+.wz_tbl_1{width:100%;text-align:center;margin: 7px 0 0px;}
+.wz_tbl_1 table {clear:both;width:100%;border-collapse:collapse;border-spacing:0;background-color:#fff}
+.wz_tbl_1 tbody, .wz_tbl_1 tr, .wz_tbl_1 td {vertical-align:middle}
+.wz_tbl_1 caption{display:none}
+.wz_tbl_1 th{padding:10px 0;border:1px solid #dcdcdc;color:#666;text-align:center;font-weight:bold;background-color: #fbfbfb;}
+.wz_tbl_1 td{padding:5px;border:1px solid #e5e5e5;color:#4c4c4c;text-align:left;}
+.wz_tbl_1 th span.last:after {border:none;}
+.wz_tbl_1 td .numberic {text-align:right;padding-right:4px;}

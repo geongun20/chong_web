@@ -3,13 +3,13 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 include_once('./_common.php');
 include_once("$board_skin_path/moonday.php"); // 석봉운님의 음력날짜 함수
 if ($config['cf_2']) include_once(G5_THEME_PATH.'/aside.php'); // aside 사용이면 aside 표시
-
+/*
 if (preg_match('/%/', $width)) {
 	$col_width = "14%"; //표의 가로 폭이 100보다 크면 픽셀값입력
 } else{
   $col_width = round($width/7); //표의 가로 폭이 100보다 작거나 같으면 백분율 값을 입력
 }
-
+*/
 $col_height= 110 ;//내용 들어갈 사각공간의 세로길이를 가로 폭과 같도록
 $today = getdate();
 $b_mon = $today['mon'];
@@ -38,7 +38,11 @@ $dayoftheweek = date("w", mktime (0,0,0,$month,1,$year));
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
-	
+	<div class="section-header">	
+<h3><?php echo $board['bo_subject'] ?></h3>
+
+</div>
+
 <div class="container board_top pt-4">
 	 	
 	<div class="btn-toolbar d-flex justify-content-center mt-2" role="toolbar">
@@ -112,7 +116,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	
 	<!-- 캘린더 구성 시작 -->
 	<div class="table-responsive">
-		<table class="table table-bordered text-nowrap" id="calendar" width="<?php echo $width ?>">
+		<table class="table table-bordered text-nowrap" id="calendar">
 			<thead>
 				<tr>     
 					<th class="holiday">일</th>
@@ -161,17 +165,18 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 		            $row['wr_subject'] = cut_str(get_text($row['wr_subject']),$board['bo_subject_len'],"…");
 		            $showLayer = "";
 		            if ($member['mb_level'] < $board['bo_read_level']) {
-		                $html_day[$i].= "<div class='list_day'><i class='fas fa-thumbtack'></i> ".$row['wr_subject']."</div>";
+		                $html_day[$i].= "<div class='list_day'> ".$row['wr_subject']."</div>";
 		            } else {
 		                if(!is_mobile()){ $showLayer = "onmouseover=\"PopupShow('".$j."')\" onmouseout=\"PopupHide('".$j."')\""; }
 		                 if ($is_category && $row['ca_name']) { 
-			                 $html_day[$i].= "<div class='list_day'><span class='tack'><i class='fas fa-thumbtack'></i></span><a href='".G5_BBS_URL."/board.php?bo_table=$bo_table&year=$year&month=$month&wr_id=$row[wr_id]' data-toggle='tooltip' data-placement='top' title='".$row['wr_content']."'> [".$row['ca_name']."] ".$row['wr_subject']."</a></div>";
+			                 $html_day[$i].= "<div class='list_day'><a href='".G5_BBS_URL."/board.php?bo_table=$bo_table&year=$year&month=$month&wr_id=$row[wr_id]' data-toggle='tooltip' data-placement='top' title='".$row['wr_content']."'> [".$row['ca_name']."] ".$row['wr_subject']."</a></div>";
 			            } else {
-		                $html_day[$i].= "<div class='list_day'><span class='tack'><i class='fas fa-thumbtack'></i></span><a href='".G5_BBS_URL."/board.php?bo_table=$bo_table&year=$year&month=$month&wr_id=$row[wr_id]' data-toggle='tooltip' data-placement='top' title='".$row['wr_content']."'> ".$row['wr_subject']."</a></div>";
+		                $html_day[$i].= "<div class='list_day'><a href='".G5_BBS_URL."/board.php?bo_table=$bo_table&year=$year&month=$month&wr_id=$row[wr_id]' data-toggle='tooltip' data-placement='top' title='".$row['wr_content']."'> ".$row['wr_subject']."</a></div>";
 		                }
 		            }
 	    			?>
-	    			
+	    			<!-- <i class='fas fa-thumbtack'></i>
+					<span class='tack'><i class='fas fa-thumbtack'></i></span> -->
 					<!-- 뷰 팝업레이어 , 사용하지 않음
 				    <div id="popup_<?php echo $j ?>" class="popup_layer">
 				        <?php
@@ -205,7 +210,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 		
 		            // 여기까지 숫자와 들어갈 내용에 대한 변수들의 세팅이 끝나고
 		            // 이제 여기 부터 직접 셀이 그려지면서 그 안에 내용이 들어 간다.
-		            echo ("<td class='le' style='vertical-align: top;' width=$col_width height=$col_height bgcolor=$bgcolor>");
+		            echo ("<td class='le' style='vertical-align: top;' bgcolor=$bgcolor>");
 		
 		            $f_date = $year.sprintf("%02d",$month).sprintf("%02d",$cday);
 		
@@ -263,7 +268,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 		            $cday++; // 날짜를 카운팅
 		            
 		        } else { // 유효날짜가 아니면 그냥 회색을 칠한다.
-		            echo (" <td width=$col_width height=$col_height bgcolor=f9fafe valign=top>&nbsp;</td>");
+		            echo (" <td valign=top>&nbsp;</td>");
 		        }
 		        if (($iz%7) == 0) echo ("</tr>");
 		    } // 반복구문이 끝남

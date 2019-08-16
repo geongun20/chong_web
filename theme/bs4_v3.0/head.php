@@ -116,7 +116,6 @@ if(defined('_INDEX_')) { // index에서만 실행
 					<div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=chong_notice"><span> 총학생회 공지</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=chong_sosick"><span> 총학생회 소식</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=gong_list"><span> 공약 리스트</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=chong_before"><span> 과거 총학생회 자료</span></a>
 					</div>
 	            </li>
@@ -150,7 +149,6 @@ if(defined('_INDEX_')) { // index에서만 실행
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=detail_rule"><span> 세칙</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=recent_rule"><span> 역대회칙</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=conference_materials"><span> 회의자료</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=account"><span> 예결산보고</span></a>
   				</div>
               </li>
 
@@ -181,7 +179,8 @@ if(defined('_INDEX_')) { // index에서만 실행
           </a>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_elec"><span> 선거관리위원회</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_munhwa"><span> 문화자치위원회</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_culture"><span> 문화자치위원회</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=culture_rent"><span> └ 문화자치위원회 장비대여</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_ja_an"><span> 자치언론기금</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_festival"><span> 축제하는사람들</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib"><span> 자치도서관</span></a>
@@ -218,7 +217,6 @@ if(defined('_INDEX_')) { // index에서만 실행
   				</a>
   				<div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=petition"><span> 학생청원</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=convergence"><span> 학생의견수렴</span></a>
   				</div>
               </li>
               <?php
@@ -247,14 +245,11 @@ if(defined('_INDEX_')) { // index에서만 실행
           </a>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=plotter"><span> 플로터인쇄</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=gwang_sheer"><span> 광역셔틀문의</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 셔틀정보</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 편의시설정보</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 셔틀정보</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 학내분실물</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=campus_map"><span> 캠퍼스맵</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 학내주요연락처</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=a_jick"><span> 사이트맵</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=wide_shuttle"><span> 광역셔틀</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=shuttle_info"><span> 셔틀정보</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=convenience"><span> 편의시설정보</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=contact"><span> 학내주요연락처</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=sitemap"><span> 사이트맵</span></a>
           </div>
               </li>
 

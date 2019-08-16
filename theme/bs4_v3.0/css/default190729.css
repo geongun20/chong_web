@@ -45,8 +45,8 @@ body {margin:0;padding:0;font-size:.85rem !important;font-family: "Apple SD Goth
 .hd_pops_footer .hd_pops_close{background:#393939;position:absolute;top:0;right:0}
 
 /* Main */
-/*.container {max-width: 900px !important;}*/
-
+.container {max-width: 900px !important;}
+/* 코딩 뭐갓이 해놨네 */
 nav .container {max-width: 1200px !important;}
 
 /* CIRCLE IMAGE CONTENT
@@ -417,8 +417,7 @@ background-position: 50% 50%;
 .td_group {width:80px;text-align:center}
 .td_mb_id {width:100px;text-align:center}
 .td_mng {width:80px;text-align:center}
-/*.td_name {width:100px;text-align:left}*/
-.td_name {text-align:left}
+.td_name {width:100px;text-align:left}
 .td_nick {width:100px;text-align:center}
 .td_num {width:50px;text-align:center}
 .td_numbig {width:80px;text-align:center}

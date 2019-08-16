@@ -18,7 +18,8 @@
 #bo_list .td_group {width:100px;text-align:center}
 #bo_list .td_mb_id {width:100px;text-align:center}
 #bo_list .td_mng {width:80px;text-align:center}
-#bo_list .td_name {width:100px;text-align:center}
+#bo_list .td_name {text-align:center}
+/*#bo_list .td_name {width:100px;text-align:center}*/
 #bo_list .td_nick {width:100px;text-align:center}
 #bo_list .td_num {width:50px;text-align:center}
 #bo_list .td_numbig {width:80px;text-align:center}
@@ -138,7 +139,8 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 #bo_v_act {margin-bottom:30px;text-align:center}
 #bo_v_act .bo_v_act_gng {position:relative}
 #bo_v_act a {margin-right:5px;vertical-align:middle}
-#bo_v_act strong {color:#ff3061}
+/*#bo_v_act strong {color:#ff3061}*/
+#bo_v_act strong {color:#ffffff}
 #bo_v_act_good, #bo_v_act_nogood {display:none;position:absolute;top:30px;left:0;padding:10px 0;width:165px;background:#ff3061;color:#fff;text-align:center}
 
 #bo_v_sns {margin:0 0 20px;padding:0;list-style:none;zoom:1}

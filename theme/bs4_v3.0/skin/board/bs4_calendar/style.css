@@ -1,6 +1,43 @@
 @charset "utf-8";
 /* SIR 지운아빠 */
 
+.moonday {display: none;}
+
+.container {
+    max-width: 100% !important;
+}
+
+.list_day {
+    background: rgba(0, 123, 255, 0.11);
+    border-radius: 3px;
+    padding: 2px 3px;
+    margin: 2px 0;
+}
+
+.list_day {
+    color: #5d5d5d;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0,123,255,.5);
+    box-shadow: 1px 1px 4px #00000024;
+    transition-duration: .3s;
+}
+.list_day:hover {
+    box-shadow: 1px 1px 10px #3a93fff2;
+}
+.content {
+    min-height: 80px;
+}
+
+.table-bordered {    max-width: 1200px;
+margin: 0 auto;}
+
+th {max-width: 100%; width: 14%;}
+td {max-width: 100%;}
+@media (max-width: 768px) {
+#calendar tr td {
+    white-space: normal !important;
+}
+}
 /* ### 기본 스타일 커스터마이징 시작 ### */
 .btn-left {float: left;}
 .btn-right {float: right;}

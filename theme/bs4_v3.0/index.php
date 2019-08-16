@@ -23,19 +23,17 @@ if ($config['cf_1']) include_once(G5_THEME_PATH.'/aside.php');
 			<div class="col-md-4 col-lg-4">
 				<!-- textbox -->
 				<div class="textbox">
-					<div class="textbox__image"><a href="http://bit.ly/201906snushuttle"><img src="<?php echo G5_THEME_URL ?>/asset/images/main/5.jpg" alt=""/></a></div>
+					<div class="textbox__image"><a href="http://bit.ly/201906snushuttle"><img src="<?php echo G5_THEME_URL ?>/img/shuttle.png" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="http://bit.ly/201906snushuttle">광역셔틀신청</a></h2>
-						<div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
 					</div>
 				</div> <!-- End of textbox_body -->
 			</div>
 			<div class="col-md-4 col-lg-4">
 				<div class="textbox"> <!-- textbox -->
-					<div class="textbox__image"><a href="./bbs/board.php?bo_table=petition"><img src="<?php echo G5_THEME_URL ?>/asset/images/main/6.jpg" alt=""/></a></div>
+					<div class="textbox__image"><a href="./bbs/board.php?bo_table=petition"><img src="<?php echo G5_THEME_URL ?>/img/chungwon.png" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="./bbs/board.php?bo_table=petition">학생청원</a></h2>
-						<div class="textbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
 					</div>
 				</div> <!-- End of textbox -->
 			</div> <!-- End of col -->
