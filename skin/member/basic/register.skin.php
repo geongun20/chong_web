@@ -23,7 +23,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     </div>
     <section id="fregister_term">
         <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> 회원가입약관</h2>
-        <textarea readonly><?php echo get_text($config['cf_stipulation']) ?></textarea>
+        <textarea readonly rows=30><?php echo get_text($config['cf_stipulation']) ?></textarea>
         <fieldset class="fregister_agree">
             <label for="agree11">회원가입약관의 내용에 동의합니다.</label>
             <input type="checkbox" name="agree" value="1" id="agree11">
@@ -86,7 +86,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
         return true;
     }
-    
+
     jQuery(function($){
         // 모두선택
         $("input[name=chk_all]").click(function() {

@@ -49,8 +49,12 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
 ?>
 
 
-
-<link rel="shortcut icon" href="./img/favicon.png">
+<link rel="icon" type="image/png" sizes="256x256"  href="/256.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/256.png">
 
 
 <!-- 상단 시작 { -->
@@ -75,10 +79,10 @@ if(defined('_INDEX_')) { // index에서만 실행
 		</button>
 
 		<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-	       <ul class="navbar-nav ml-auto navbar-right">
+	       <ul class="navbar-nav ml-auto navbar-right" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=petition">
 	            <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-					총학생회 소개
+					<a class="nav-link dropdown-toggle" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=petition" data-toggle="dropdown">
+            총학생회 소개
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
@@ -183,7 +187,13 @@ if(defined('_INDEX_')) { // index에서만 실행
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=culture_rent"><span> └ 문화자치위원회 장비대여</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_ja_an"><span> 자치언론기금</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_festival"><span> 축제하는사람들</span></a>
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib"><span> 자치도서관</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib0"><span> 자치도서관</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib0"><span> └ 자치도서관 운영위원회</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib1"><span> └ 자료목록</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib2"><span> └ 온라인 기록보관소</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib4"><span> └ 대자보숲/포스터숲</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib3"><span> └ 도서나눔</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_lib5"><span> └ 구 자도 자료</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_daejayeon"><span> 대학행정자치연구위원회</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=under_haksowi"><span> 학생·소수자인권위원회</span></a>
           </div>
@@ -209,35 +219,8 @@ if(defined('_INDEX_')) { // index에서만 실행
                   }
                   ?>
 
-                  <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
 
-
-          의견수렴
-  				</a>
-  				<div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=petition"><span> 학생청원</span></a>
-  				</div>
-              </li>
-              <?php
-              foreach($menus as $menu_item) {
-
-                  $is_active_menu = ($menu_item['is_active'] ? 'active' : '');
-
-                  if(empty($menu_item['sub_menu'])) {
-
-                      echo '<li class="nav-item"><a class="nav-link" href="'.$menu_item['url'].'" target="_'.$menu_item['target'].'">'.$menu_item['name'].'</a></li>'.PHP_EOL;
-                      } else {
-  						echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$menu_item['name'].'</a>'.PHP_EOL;
-  						echo '<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">'.PHP_EOL;
-                          foreach($menu_item['sub_menu'] as $sub_menu) {
-                              echo '<a class="dropdown-item" href="'.$sub_menu['url'].'" target="_'.$sub_menu['target'].'">'.$sub_menu['name'].'</a>'.PHP_EOL;
-                          }
-                          echo '</div>'.PHP_EOL;
-                          echo '</li>'.PHP_EOL;
-                      }
-                  }
-                  ?>
+<li class="nav-item"><a class="nav-link" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=petition" target="_self">학생청원</a></li>
 
                   <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -246,6 +229,7 @@ if(defined('_INDEX_')) { // index에서만 실행
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=plotter"><span> 플로터인쇄</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=wide_shuttle"><span> 광역셔틀</span></a>
+            <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/board.php?bo_table=jehyu"><span> 제휴정보</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=shuttle_info"><span> 셔틀정보</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=convenience"><span> 편의시설정보</span></a>
             <a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/content.php?co_id=contact"><span> 학내주요연락처</span></a>
@@ -381,17 +365,16 @@ if(defined('_INDEX_')) { // index에서만 실행
 
 			<!-- CSS for Modern 1-->
 			<link href="<?php echo G5_THEME_URL ?>/asset/css/index_modern_1.css" rel="stylesheet">
-
-		    <header class="masthead" style="background-image:url('<?php echo G5_THEME_URL ?>/asset/images/index_modern_1/header-bg.jpg');">
+		    <header class="masthead" style="background-image:url('<?php echo G5_THEME_URL ?>/img/main.png');">
 		        <div class="container">
 		            <div class="intro-text">
-		                <div class="intro-lead-in">
+		              <!--  <div class="intro-lead-in">
 			                <span>그누보드 반응형 BS4 테마의 웹 사이트입니다!!</span>
 			            </div>
 						<div class="intro-heading text-uppercase">
 							<span>그누보드 5.3과 Bootstrap 4를 사용하여 제작했습니다.</span>
 						</div>
-						<a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services">문의하기</a>
+						<a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services">문의하기</a>            -->
 					</div>
 		        </div>
 		    </header>

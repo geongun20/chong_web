@@ -11,7 +11,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<div class="section-header page">
         <h3>회원 가입</h3>
     </div>
-    
+
     <?php
     // 소셜로그인 사용시 소셜로그인 버튼
     @include_once(get_social_skin_path().'/social_register.skin.php');
@@ -28,7 +28,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <section id="fregister_term">
         <p class="regist-title"><i class="fa fa-check-square-o" aria-hidden="true"></i> 회원가입약관</p>
 		<div class="form-group">
-			<textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo get_text($config['cf_stipulation']) ?></textarea>
+			<textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="15"><?php echo get_text($config['cf_stipulation']) ?></textarea>
 		</div>
 		<div class="form-check">
 			<input type="checkbox" class="form-check-input" name="agree" value="1" id="exampleCheck1">
@@ -92,7 +92,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
         return true;
     }
-    
+
     jQuery(function($){
         // 모두선택
         $("input[name=chk_all]").click(function() {

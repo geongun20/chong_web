@@ -15,7 +15,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<div class="section-header page">
         <h3>회원 가입</h3>
     </div>
-    
+
 <form id="fregisterform" name="fregisterform" action="<?php echo $register_action_url ?>" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
 <input type="hidden" name="w" value="<?php echo $w ?>">
 <input type="hidden" name="url" value="<?php echo $urlencode ?>">
@@ -28,7 +28,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <input type="hidden" name="mb_nick_default" value="<?php echo get_text($member['mb_nick']) ?>">
 <input type="hidden" name="mb_nick" value="<?php echo get_text($member['mb_nick']) ?>">
 <?php }  ?>
- <div id="register_form"  class="form_01">   
+ <div id="register_form"  class="form_01">
     <div>
         <p class="regist-title"><i class="fa fa-edit"></i> 사이트 이용정보 입력</p>
         <ul class="list-group mb-4">
@@ -37,7 +37,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	            	<div class="row">
 		            	<div class="col-6">
 		            	    <label for="reg_mb_id" class="sound_only">아이디<strong>필수</strong></label>
-							<input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="form-control <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="아이디">	
+							<input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="form-control <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="아이디">
 		            	</div>
 		            	<div class="col-12">
 							<small id="emailHelp" class="form-text text-muted">영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.</small>
@@ -53,7 +53,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 							<input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="form-control <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호">
 			   	 		</div>
 	         		</div>
-	         	
+
 			 		<div class="col">
 			 			<div class="form-group">
 							<label for="reg_mb_password_re" class="sound_only">비밀번호 확인<strong>필수</strong></label>
@@ -95,7 +95,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 						</div>
 	            	</div>
             	</div>
-  
+
                 <div id="msg_certify">
                     <strong><?php echo $mb_cert; ?> 본인확인</strong><?php if ($member['mb_adult']) { ?> 및 <strong>성인인증</strong><?php } ?> 완료
                 </div>
@@ -104,7 +104,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <span class="frm_info">아이핀 본인확인 후에는 이름이 자동 입력되고 휴대폰 본인확인 후에는 이름과 휴대폰번호가 자동 입력되어 수동으로 입력할수 없게 됩니다.</span>
                 <?php } ?>
 
-                
+
             </li>
             <?php if ($req_nick) {  ?>
             <li class="list-group-item">
@@ -112,30 +112,31 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	            	<div class="row">
 						<div class="col-6">
 							<label for="reg_mb_nick" class="sound_only">닉네임<strong>필수</strong></label>
-                
+
 							<input type="hidden" name="mb_nick_default" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>">
 							<input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="form-control frm_input required nospace  half_input" size="10" maxlength="20" placeholder="닉네임">
 						</div>
 						<div class="col-12">
 							<small class="form-text text-muted">공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
 							닉네임을 바꾸시면 앞으로 <?php echo (int)$config['cf_nick_modify'] ?>일 이내에는 변경 할 수 없습니다.</small>
-		        		</div> 
+		        		</div>
 	            	</div>
-            	</div>              
+            	</div>
             </li>
             <?php }  ?>
 
             <li class="list-group-item">
 							<div class="form-group">
-					<label for="reg_mb_email" class="sound_only">-Email<strong>필수</strong></label>                
+					<label for="reg_mb_email" class="sound_only">-Email<strong>필수</strong></label>
 					<?php if ($config['cf_use_email_certify']) {  ?>
 					<span class="frm_info">
-                    	<?php if ($w=='') { echo "E-mail 로 발송된 내용을 확인한 후 인증하셔야 회원가입이 완료됩니다."; }  ?>
+            <?php if ($w=='') { echo "E-mail 로 발송된 내용을 확인한 후 인증하셔야 회원가입이 완료됩니다."; }  ?>
+						<?php if ($w=='') { echo "서울대학교 구성원 E-mail(snu.ac.kr)만 이용 가능합니다."; }  ?>
 						<?php if ($w=='u') { echo "E-mail 주소를 변경하시면 다시 인증하셔야 합니다."; }  ?>
 						</span>
 						<?php }  ?>
 						<input type="hidden" name="old_email" value="<?php echo $member['mb_email'] ?>">
-						<input type="email" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-email">
+						<input type="email" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
 				</div>
             </li>
 
@@ -151,7 +152,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
             <?php if ($config['cf_use_tel']) {  ?>
              <li class="list-group-item">
-            	<div class="form-group">           
+            	<div class="form-group">
                 <label for="reg_mb_tel" class="sound_only">전화번호<?php if ($config['cf_req_tel']) { ?><strong>필수</strong><?php } ?></label>
                 <input type="text" name="mb_tel" value="<?php echo get_text($member['mb_tel']) ?>" id="reg_mb_tel" <?php echo $config['cf_req_tel']?"required":""; ?> class="form-control frm_input half_input <?php echo $config['cf_req_tel']?"required":""; ?>" maxlength="20" placeholder="전화번호">
             	</div>
@@ -160,9 +161,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
             <?php if ($config['cf_use_hp'] || $config['cf_cert_hp']) {  ?>
              <li class="list-group-item">
-            	<div class="form-group"> 
+            	<div class="form-group">
                 <label for="reg_mb_hp" class="sound_only">휴대폰번호<?php if ($config['cf_req_hp']) { ?><strong>필수</strong><?php } ?></label>
-                
+
                 <input type="text" name="mb_hp" value="<?php echo get_text($member['mb_hp']) ?>" id="reg_mb_hp" <?php echo ($config['cf_req_hp'])?"required":""; ?> class="form-control frm_input right_input half_input <?php echo ($config['cf_req_hp'])?"required":""; ?>" maxlength="20" placeholder="휴대폰번호">
                 <?php if ($config['cf_cert_use'] && $config['cf_cert_hp']) { ?>
                 <input type="hidden" name="old_mb_hp" value="<?php echo get_text($member['mb_hp']) ?>">
@@ -220,7 +221,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="form-group">
                 <label for="reg_mb_icon" class="frm_label">회원아이콘</label>
                 <input type="file" name="mb_icon" id="reg_mb_icon" class="form-control-file">
-                                
+
                 <span class="frm_info">
                     <small id="emailHelp" class="form-text text-muted">이미지 크기는 가로 <?php echo $config['cf_member_icon_width'] ?>픽셀, 세로 <?php echo $config['cf_member_icon_height'] ?>픽셀 이하로 해주세요.<br>
                     gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_icon_size']) ?>바이트 이하만 등록됩니다.</small>
@@ -240,7 +241,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="form-group">
                 <label for="reg_mb_img" class="frm_label">회원이미지</label>
                 <input type="file" name="mb_img" id="reg_mb_img" class="form-control-file">
-                                
+
                 <span class="frm_info">
                     <small id="emailHelp" class="form-text text-muted">이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
                     gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_img_size']) ?>바이트 이하만 등록됩니다.</small>
@@ -269,7 +270,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <li class="list-group-item">
             <div class="form-group">
                 <span>SMS 수신여부</span>
-            <div class="form-check">                
+            <div class="form-check">
                     <input type="checkbox" class="form-check-input" name="mb_sms" value="1" id="reg_mb_sms" <?php echo ($w=='' || $member['mb_sms'])?'checked':''; ?>>
                     휴대폰 문자메세지를 받겠습니다.
                 </div>
@@ -288,8 +289,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 					<span class="frm_info">
                     	정보공개를 바꾸시면 앞으로 <?php echo (int)$config['cf_open_modify'] ?>일 이내에는 변경이 안됩니다.
 					</span>
-            	</div> 
-            </div>            
+            	</div>
+            </div>
             </li>
             <?php } else {  ?>
             <li class="list-group-item">
@@ -329,7 +330,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             	</div>
             </li>
         </ul>
-    
+
 </div>
 <div class="btn_confirm btn_box">
     <a href="<?php echo G5_URL ?>" class="btn btn-secondary">취소</a>

@@ -31,10 +31,10 @@ if(false){
 
 				<!--<div class="col-md-3">-->
 					<ul class="footer-links" ">
-						<li>서울특별시 관악구 관악로 1 서울대학교 학생회관 총학생회실 (63동 426호), 08826</li>
+						<li>서울특별시 관악구 관악로 1 서울대학교 학생회관 총학생회실 (63동 436호), 08826</li>
 						<li><a href="mailto:we.snu.ac.kr@gmail.com"><i class="far fa-envelope"></i> we.snu.ac.kr@gmail.com</a></li>
-						<li><a href="https://www.facebook.com/pg/snuchong/"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-						<li style="margin-bottom: 25px;"><a href="https://www.instagram.com/tomorrow_of_snu/"><i class="fab fa-instagram"></i> Instagram</a></li>
+						<li><a href="https://www.facebook.com/pg/snuchong/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+						<li style="margin-bottom: 25px;"><a href="https://www.instagram.com/tomorrow_of_snu/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
 					</ul>
 				<!--</div>-->
 			</div>

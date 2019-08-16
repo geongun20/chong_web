@@ -31,27 +31,27 @@
 
 /* Responsive for showcase */
 @media (max-width: 978px) {
-	.showcase-text {padding: 3rem;}	
+	.showcase-text {padding: 3rem;}
 	.showcase .text-end {padding-bottom: 0;}
 }
 
 /* Masthead */
-header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 650px}
+header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: 1200px;min-height: 400px;}
 header.masthead .intro-text {padding-top: 150px; padding-bottom: 100px;}
 header.masthead .intro-text .intro-lead-in {font-size: 24px; font-style: italic; line-height: 24px; margin-bottom: 25px;}
 header.masthead .intro-text .intro-heading {font-size: 32px; font-weight: 700; line-height: 32px; margin-bottom: 50px;}
 header.masthead .intro-text { padding-top: 300px; padding-bottom: 200px;}
 
 /* Responsive forMasthead */
-@media (max-width: 920px) {
-	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 500px;}
+@media (max-width: 1200px) {
+	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: 800px;min-height: 300px;}
 	header.masthead .intro-text {padding-top: 210px; padding-bottom: 40px;}
 	header.masthead .intro-text .intro-lead-in {font-size: 20px; font-style: italic; line-height: 20px; margin-bottom: 18px;}
 	header.masthead .intro-text .intro-heading {font-size: 24px; font-weight: 700; line-height: 24px; margin-bottom: 40px;}
 }
 
 @media (max-width: 640px) {
-	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: cover;min-height: 400px;}
+	header.masthead {text-align: center; color: #fff; background-repeat: no-repeat; background-attachment: scroll; background-position: 50%; background-size: 440px;min-height: 200px;}
 	header.masthead .intro-text {padding-top: 180px; padding-bottom: 40px;}
 	header.masthead .intro-text .intro-lead-in {font-size: 14px; font-style: italic; line-height: 14px; margin-bottom: 16px;}
 	header.masthead .intro-text .intro-heading {font-size: 16px; font-weight: 700; line-height: 16px; margin-bottom: 36px;}
